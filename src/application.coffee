@@ -1,4 +1,3 @@
-#= require_tree ./vendor
-#= require_tree .
-
-$ -> App.Controllers.KlondikeTurnOne.setupGame()
+$ ->
+  $(App.rootElement).rawdraggable()
+  App.Controllers.KlondikeTurnOne.setupGame()

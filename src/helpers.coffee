@@ -1,5 +1,3 @@
-# Development helpers
-
 window._assert = (exp, messages...) ->
   unless exp
     p 'Assertion failed'
