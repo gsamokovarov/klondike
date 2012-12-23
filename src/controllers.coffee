@@ -317,7 +317,7 @@ class App.Controllers.Klondike
       else 0
 
   removeEventHandlers: ->
-    $(@rootElement).rawdraggable('destroy')
+    $(@rootElement).rawdraggable('destroy') if $(@rootElement).hasClass('ui-rawdraggable')
     $(@rootElement).off()
 
   registerEventHandlers: ->
