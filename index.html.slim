@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    title= @title
+    javascript:
+      new Image().src = 'images/paris.png'
+    = stylesheets 'application'
+    = javascripts 'application'
+  body
+    #solitaire-canvas
+    javascript:
+      App.Controllers.KlondikeTurnOne.setupGame()
