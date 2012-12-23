@@ -1,4 +1,4 @@
-#= require underscore
+#= require ./vendor/underscore
 
 window.App ?= {}
 App.Models ?= {}

@@ -1,9 +1,7 @@
-#= require jquery
-#= require jquery.ui.mouse
-#= require jquery.effects.core
-#= require jquery_ujs
+#= require ./vendor/jquery
+#= require ./vendor/jquery-ui
 
-#= require models
+#= require ./models
 
 # zIndex:
 # 0-999: static base elements
@@ -14,7 +12,7 @@
 
 window.App ?= {}
 App.Controllers ?= {}
-App.rootElement = '#solitaire-canvas'
+App.rootElement = '#solitaireCanvas'
 
 class App.Controllers.Card
   size: {width: 79, height: 123}
