@@ -14,7 +14,7 @@
 
 window.App ?= {}
 App.Controllers ?= {}
-App.rootElement = '#solitaireCanvas'
+App.rootElement = '#solitaire-canvas'
 
 class App.Controllers.Card
   size: {width: 79, height: 123}
