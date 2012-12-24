@@ -6,7 +6,6 @@ build:
 	@cat src/vendor/underscore.js     >> ${APPLICATION_JS}
 	@cat src/vendor/transformjs.js    >> ${APPLICATION_JS}
 	@cat src/vendor/json2.js          >> ${APPLICATION_JS}
-	@cat src/vendor/json2.js          >> ${APPLICATION_JS}
 	@coffee -p src/helpers.coffee     >> ${APPLICATION_JS}
 	@coffee -p src/models.coffee      >> ${APPLICATION_JS}
 	@coffee -p src/controllers.coffee >> ${APPLICATION_JS}
