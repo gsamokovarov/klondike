@@ -124,8 +124,6 @@ class App.Controllers.Klondike
       tableauPiles: ({left: firstColumn + i * columnOffset, top: secondRow} for i in [0...@model.numberOfTableauPiles])
       tableauFanningOffset: 20
 
-      undoButton: {left: firstColumn + columnOffset * @model.numberOfTableauPiles, top: firstRow}
-
   appendBaseElements: () ->
     baseContainer = document.createElement('div')
     baseContainer.className = 'baseContainer'
@@ -143,13 +141,16 @@ class App.Controllers.Klondike
       makeBaseCardElement('foundationBase', "foundationBase#{i}", @positions.foundations[i])
     for i in [0...@model.numberOfTableauPiles]
       makeBaseCardElement('tableauPileBase', "tableauPileBase#{i}", @positions.tableauPiles[i])
-    $('<div class="button gray undoButton">Undo</div>').css(@positions.undoButton) \
-      .appendTo(baseContainer)
     $(@rootElement).append(baseContainer)
 
     overlayContainer = document.createElement('div')
     overlayContainer.className = 'overlayContainer'
-    overlayContainer.innerHTML = '<div class="youWin"><h2>You win!</h2><div class="button green playAgainButton">Deal New Cards</div></div>'
+    overlayContainer.innerHTML = '''
+      <div class="youWin">
+        <h2>You win!</h2>
+        <div class="button green playAgainButton">New</div>
+      </div>
+    '''
     $(@rootElement).append(overlayContainer)
 
     # Between TransformJS and the browser, something is slowing the transform

@@ -1,3 +1,1 @@
-$ ->
-  App.Controllers.KlondikeTurnOne.setupGame()
-  null
+$ -> App.Controllers.KlondikeTurnOne.setupGame()

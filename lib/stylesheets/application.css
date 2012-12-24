@@ -102,10 +102,13 @@ body {
   background-color: #ccf;
   opacity: 0.9;
   padding: 20px;
-  position: absolute;
-  top: 170px;
-  left: 50px;
-  width: 580px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 380px;
+  height: 300px;
+  margin-left: -190px;
+  margin-top: -150px;
   z-index: 4000;
   display: none;
   text-align: center; }
