@@ -3,7 +3,7 @@ App.Controllers ?= {}
 App.rootElement = '#solitaireCanvas'
 
 class App.Controllers.Card
-  size: {width: 79, height: 123}
+  size: {width: 100, height: 156}
   element: null
 
   constructor: (@model) ->
