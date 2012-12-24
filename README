@@ -1,0 +1,40 @@
+.------.------.------.------.
+|A_  _ |A /\  |A _   |A .   |
+|( \/ )| /  \ | ( )  | / \  |
+| \  / | \  / |(_x_) |(_,_) |
+|  \/ A|  \/ A|  Y  A|  I  A|
+`------^------^------'------' hjw
+
+.====================.
+| My mom's solitaire |
+'===================='
+
+All that my mother do on her computer is to play the solitaire. However,
+she managed to somehow broke the Windows 7 games and now they won't run.
+Every other solitaire I found on the internet was either full of ads,
+had really small cards or had a lot of clutter and she gets lost in all
+of that. So every time I'm in town she occupies my laptop in a zombie
+like state, doing nothing than playing Gnome's AisleRiot solitaire.
+
+I finally decided to end that and set out to make her a solitaire she
+would play on her own computer. I had the following requirements:
+
+1. Make it simple with a few dependencies.
+2. Don't waste time on it.
+
+Thankfully I have found Jo Liss' one and based my efforts on top of
+hers, so that would clear off point 2. However I had to drop the rails
+dependency as running a server on her Windows PC would mean trouble.
+Having to download the rails dependencies would too, as she doesn't have
+a constant internet connection and my telecom dongles drop their speed
+after a given number of downloaded megabytes. I also dropped sprockets,
+slim, sass, compass and all the ruby stuff and built all the javascripts
+with a simple makefile. After I had the game running I set to make the
+cards bigger, so she could see them better. Hopefully that was not hard
+as Jo Liss had left the original SVG of the cards in the tree, so I was
+able to scale them to my likings. After the cards was scaled, I removed
+the undo button, as my mother was not using it. Finally I have built and
+transfered the cards on her PC and made a shortcut on her desktop to
+easily start them and...
+
+Voila! Now she has her perfect solitaire. 
